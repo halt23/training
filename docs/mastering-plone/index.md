@@ -9,12 +9,12 @@ myst:
 
 (mastering-plone-label)=
 
-# Mastering Plone 6 Development
+# Mastering Plone 6 development
 
 *Mastering Plone Development* is intended as a training to learn proven practices of Plone development.
 It's both, an online course and a sketch for an on-the-spot training.
 
-The story of a conference platform provides a week-long training of several development topics that can be split in two trainings:
+The story of a conference platform provides a training of several development topics that can be split in two trainings:
 
 - A beginner training (2 to 3 days) covering the essentials of Plone development.
 - An advanced training (3 to 5 days) with additional advanced topics concerning the Plone backend.
@@ -35,37 +35,34 @@ For Plone Classic see training {doc}`/theming/index`, training {doc}`/mastering-
 caption: Mastering Plone 6 Development
 name: toc-mastering
 maxdepth: 3
-numbered: true
+numbered: 2
 ---
 
 about_mastering
 intro
 case
 what_is_plone
-plone_versions
-features
 installation
-instructions
+features
 configuring_customizing
-volto_overrides
 add-ons
 extending
-eggs1
 dexterity
 dexterity_2_talk
 dexterity_reference
-volto_development
+volto_overrides
 volto_talkview
+volto_development
 behaviors_1
 volto_frontpage
 api
 events
 registry
 custom_search
-upgrade_steps
 volto_testing
 thirdparty_behaviors
 dexterity_3
+upgrade_steps
 volto_components_sponsors
 volto_addon
 volto_custom_addon
@@ -73,14 +70,8 @@ volto_custom_addon2
 user_generated_content
 relations
 voting-story/index
-behaviors_2
-endpoints
-volto_actions
-reusable
 deployment_code
-restapi
 code
-video
 trainer
 ```
 

@@ -7,11 +7,16 @@ myst:
     "keywords": ""
 ---
 
+(code-label)=
+
 # The code for the training
 
 You can get the complete code for this training from GitHub.
 - The backend add-on [ploneconf.site](https://github.com/collective/ploneconf.site)
 - The frontend Volto app [volto-ploneconf](https://github.com/collective/volto-ploneconf)
+
+The backend add-on is included in the backend setup of [Training setup Mastering Plone Development](https://github.com/collective/training_buildout).
+See chapter {ref}`installation-install-backend-label`.
 
 Further add-ons are build or used while stepping through advanced training chapters.
 For the sake of completion we are mentioning them here.
@@ -25,10 +30,10 @@ They will be added by name in backend configuration or frontend configuratin, th
 ## The code-packages
 
 The add-on package [ploneconf.site](https://github.com/collective/ploneconf.site) contains the complete backend code for this training excluding exercises.
-It is automatically downloaded from GitHub when you run `make build` in your Plone backend set up from {doc}`instructions`.
+It is automatically downloaded from GitHub when you run `make build` in your Plone backend set up from {doc}`installation`.
 
 The frontend app [volto-ploneconf](https://github.com/collective/volto-ploneconf) holds the code for the frontend excluding exercises.
-As explained in {doc}`instructions`, it is to be installed side by side with the backend in a folder `/frontend/`.
+As explained in {doc}`installation`, it is to be installed side by side with the backend in a folder `/frontend/`.
 Optional frontend add-ons are configured here in `packages.json`.
 
 The default branches of these repositories hold the code of the final chapter of the training.
@@ -83,46 +88,41 @@ This does two things:
 These are the tags of the backend add-on for which there is code:
 
 
-| Chapter                        | Tag-Name                 |
-| ------------------------------ | ------------------------ |
+| Chapter                        | Tag-Name                 | Package |
+| ------------------------------ | ------------------------ | --- |
 | {doc}`about_mastering` | |
-| {doc}`video` | |
 | {doc}`intro` | |
 | {doc}`case` | |
 | {doc}`what_is_plone` | |
 | {doc}`installation` | |
-| {doc}`instructions` | |
 | {doc}`features` | |
-| {doc}`plone_versions` | |
 | {doc}`configuring_customizing` | |
-| {doc}`volto_overrides` | |
-| {doc}`extending` | |
 | {doc}`add-ons` | |
-| {doc}`eggs1` | initial |
+| {doc}`extending` | |
 | {doc}`dexterity` | |
-| {doc}`dexterity_2_talk` | talks |
+| {doc}`dexterity_2_talk` | |
 | {doc}`dexterity_reference` | |
-| {doc}`volto_development` | |
-| {doc}`volto_talkview` | |
-| {doc}`behaviors_1` | behaviors_1 |
-| {doc}`volto_frontpage` | |
+| {doc}`volto_overrides` | overrides | volto-ploneconf |
+| {doc}`volto_talkview` | talkview | volto-ploneconf |
+| {doc}`volto_development` | 
+| {doc}`behaviors_1` | behaviors_1 | ploneconf.site |
+| {doc}`volto_frontpage` | frontpage | ploneconf.site |
 | {doc}`api` | |
-| {doc}`events` | event |
-| {doc}`registry` | registry |
+| {doc}`events` | base | ploneconf.site |
+| {doc}`registry` | vocabularies | ploneconf.site |
 | {doc}`custom_search` | |
-| {doc}`upgrade_steps` | upgrade_steps |
 | {doc}`volto_testing` | |
 | {doc}`thirdparty_behaviors` | |
-| {doc}`dexterity_3` | dexterity_3 |
+| {doc}`dexterity_3` |
+| {doc}`upgrade_steps` |
 | {doc}`volto_components_sponsors` | |
 | {doc}`volto_addon` | |
 | {doc}`volto_custom_addon` | |
 | {doc}`volto_custom_addon2` | |
 | {doc}`user_generated_content` | |
-| {doc}`relations` | |
-| {doc}`voting-story/index` | |
+| {doc}`relations` | relations |
+| {doc}`voting-story/index` | | training.votable, volto-training-votable |
 | {doc}`deployment_code` | |
-| {doc}`restapi` | |
 | {doc}`code` | |
 | {doc}`trainer` | |
 

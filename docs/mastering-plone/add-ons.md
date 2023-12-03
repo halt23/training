@@ -11,10 +11,11 @@ myst:
 
 # Extending Plone with add-on packages
 
-````{sidebar} Plone Backend Chapter
+```{card}
+Backend chapter
 
-For Volto add-ons see chapter {ref}`volto-addon-label`
-````
+For frontend add-ons see chapter {ref}`volto-addon-label`
+```
 
 
 Plone add-ons enrich the CMS by
@@ -39,7 +40,7 @@ Plone frontent add-ons provide
 - a theme to design the layout of a site
 - components independent of blocks like a dropdown navigation
 
-Both can be tightly coupled, if a frontend feature depends on an new or enriched content type or any other change needed in data structure.
+Both can be tightly coupled, if a frontend feature depends on a new content type, a new behavior or any other change needed in data structure.
 For example an add-on that has the goal to provide a bookmarking feature depends on a backend add-on that handels the storing of the bookmarks.
 
 Have a look at the curated lists of add-ons:  
@@ -52,7 +53,7 @@ Have a look at the curated lists of add-ons:
 
 (add-ons-find-label)=
 
-## How to find add-ons
+## How to find appropriate add-ons
 
 It can be very hard to find the right add-on for your requirements.
 Here are some tips.
@@ -115,6 +116,15 @@ Therefore we install it with pip.
 Look at the {file}`requirements.txt` file. 
 You add a package to the configuration by adding a new line containing the package name.
 
+If the add-on is not released on [PyPI](https://pypi.org/), we tell Zope where to find the package on `Github` or another repository platform by including the necessary information in {file}`mx.ini`.
+
+```ini
+[training.votable]
+url=git@github.com:collective/training.votable.git
+branch=main
+; tag=volto
+```
+
 Adding the package to `instance.yaml` causes the generation of the Zope configuration to make the package available in a Zope app.
 
 ```yaml
@@ -130,6 +140,9 @@ Running `make build` has three effects:
   A Zope app can include multiple Plone instances.
   So an add-on can be enabled per Plone instance.
 
+```{seealso}
+Documentation {doc}`plone6docs:install/manage-add-ons-packages`
+```
 
 ### Enabling add-ons in your Plone site
 
@@ -163,3 +176,7 @@ In the next chapters we will add here our content type `talk`, configure a catal
 
 We have seen in short how to extend a vanilla Plone website with third party add-ons to add new functionality.
 Even if you do not use many of these, they are nonetheless an inspiration on how to implement features in Plone.
+
+
+
+For frontend add-ons see chapter {ref}`volto-addon-label`

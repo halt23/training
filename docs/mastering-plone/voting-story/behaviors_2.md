@@ -10,16 +10,17 @@ myst:
 
 (behaviors2-label)=
 
-# Complex Behaviors (voting story)
+# Complex Behaviors [voting story]
 
-````{sidebar} Plone Backend Chapter
+A group of jury members vote on talks to be accepted for the conference.
+
+````{card} Backend chapter
 
 Get the backend code! 
 [training.votable](https://github.com/collective/training.votable)
 ````
 
-A group of jury members vote on talks to be accepted for the conference.
-
+```{card}
 In this part you will:
 
 - Write a behavior that enables voting on content
@@ -30,6 +31,7 @@ Topics covered:
 - Behaviors with a factory class
 - Marker interface for a behavior
 - Using annotations as storage layer
+```
 
 
 (behaviors2-schema-label)=
